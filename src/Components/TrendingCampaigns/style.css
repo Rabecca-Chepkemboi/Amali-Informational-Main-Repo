@@ -1,0 +1,82 @@
+.images-section{
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    border-radius: 5px;
+    margin-right: 2em;
+    font-family: merriweather;
+}.athletes{
+    border-radius: 18px;
+    width: 70%;
+}.donation{
+    font-size: 1.5em;
+}.teams{
+    padding-left: 1em;
+    font-size: 2.5em;
+}.section-divider{
+    border: 1.9px solid green;
+    width: 8%;
+    margin: 10px auto;
+}.images-section {
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    border-radius: 5px;
+    margin-left: 2em;
+    font-family: merriweather;
+}
+.donate-button{
+    margin-bottom: 2.5em;
+    cursor: pointer;
+    padding: 10px 35px;
+    background-color: rgb(10, 88, 10);
+    border: none;
+    color: white;
+    font-size: 1em;
+    border-radius: 3px;
+}
+
+.athletes {
+    border-radius: 18px;
+    width: 70%;
+}.donation {
+    font-size: 1.5em;
+}.teams {
+    padding-left: 1em;
+    font-size: 2.5em;
+}.divider {
+    border: 1.9px solid green;
+    width: 8%;
+    margin: 10px auto;
+}@media (max-width: 375px){
+    .athletes {
+        width: 95%;
+    }}@media (max-width: 768px) {
+    .images-section {
+        margin-left: 0;
+    }    .athletes {
+        width: 95%;
+    }    .donation {
+        font-size: 1.2em;
+    }    .teams {
+        font-size: 2em;
+    }
+}@media (max-width: 480px) {
+    .images-section {
+        grid-template-columns: repeat(1, 1fr);
+    }    .donation {
+        font-size: 1.3em;
+    }    .teams {
+        font-size: 1.8em;
+    }    .section-divider {
+        width: 15%;
+    }
+}@media (max-width: 1280px){
+    .images-section {
+        margin-left: 0;
+        padding-left: 2em;
+        font-size: 1em;
+    }
+    .athletes {
+        width: 90%;
+    }}

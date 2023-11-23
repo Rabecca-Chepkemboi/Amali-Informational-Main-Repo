@@ -1,0 +1,110 @@
+.our-team-container {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 27px;
+  margin-top: 20px;
+}
+.team-member {
+  flex-basis: calc(33.33% - 20px);
+  text-align: center;
+  margin-top: 50px;
+}
+.team-member img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 10%;
+}
+.team-member h3 {
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: merriweather;
+}
+.social-link {
+  margin-top: 10px;
+}
+.social-link a {
+  display: inline-block;
+  margin: 0 5px;
+  text-decoration: none;
+  color: #220422;
+}
+.social-link{
+  color: rgb(19, 3, 3);
+  font-size: 20px;
+}
+.team{
+  font-size: 2.5em;
+  font-family: merriweather;
+}
+.social-link a:hover{
+  color: green;
+}
+.teamName{
+  font-size: xx-larger;
+  font-family: merriweather;
+}
+.our-team-container {
+  text-align: center;
+  margin-top: 40px;
+}
+.section-divider-line {
+  border: 1px solid green;
+  width: 5%;
+  margin: 10px auto;
+}
+.contact-button-container {
+  margin-top: 30px;
+}
+.contact-button {
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.contact-button:hover {
+  background-color: black;
+}
+
+@media (max-width: 1024px) {
+  .team-member {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .team-member {
+    flex-basis: calc(50% - 20px);
+  }
+  .team-member img {
+    max-width: 250px;
+  }
+}
+
+
+@media (max-width: 575px) {
+  .team-member {
+    flex-basis: 100%;
+  }
+  .team-member img {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 375px) {
+  .team-member {
+    flex-basis: 100%;
+  }
+  .team-member img {
+    max-width: 150px;
+  }
+}

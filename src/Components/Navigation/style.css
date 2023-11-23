@@ -1,0 +1,716 @@
+.nav-links ul {
+    list-style: none;
+  }
+  .navigation{
+    /* background-color: #f2f3f8;
+    position: fixed; */
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+   
+  }
+  .nav-links a:hover {
+    color: rgb(3, 75, 3);
+  }
+  .sponsor-button {
+    background-color: red;
+    border: none;
+    font-size: 1em;
+    color: white;
+    padding: 12px 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+  .sponsor-button:hover {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 12px 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: aliceblue;
+    border-radius: 4px;
+    /* margin-bottom: 30%; */
+  
+  }
+  .move-up {
+    margin-top: -10px; /* Adjust the value as needed */
+  }
+  .humberger-bar {
+    width: 25px;
+    height: 1px;
+    background-color: rgb(7, 7, 7);
+    margin: 3px 0;
+  }
+  .nav-list{
+    display: grid;
+    grid-template-columns: repeat(6, 6fr);
+    padding-right:3.5em;
+    gap: 10em;
+    align-items: center;
+    margin-top: 35px;
+  }
+  .athlete2{
+    width: 15%;
+    padding-right: 7em;
+    margin-bottom: -60px;
+  }
+  /* .navbar{
+    position: fixed;
+  } */
+
+  @media (max-width: 412px){
+    .nav-links {
+      font-size: 0.4em;
+      position: absolute;
+      right: 0;
+      top: 20%;
+      background-color: #F9FCF9;
+      width: 150%;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      z-index: 9999;
+      height: 100%;
+      overflow-y: auto; }
+    
+    .hamburger {
+      /* display: flex;
+      margin-right: 230px; */
+      margin-top: -3em;  
+     }
+     .athlete2{
+      width: 20%;
+    }
+    .athlete2 img{
+      width: 50%;
+      margin-top: 5em;
+    }
+    .amali-logo img{
+    margin-right: -160%;
+    margin-top: 2%;
+  
+    }
+  }
+
+
+
+  @media (max-width: 414px) {
+    .nav-links {
+      font-size: 0.4em;
+      position: absolute;
+      right: 0;
+      background-color: #F9FCF9;
+      width: 150%;
+      top: 71px;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      z-index: 9999;
+      height: 100%;
+      overflow-y: auto;
+    }
+    .hamburger.open .humberger-bar:nth-child(1) {
+      transform: rotate(50deg) translate(5px, 3px);
+    }
+    .hamburger.open .humberger-bar:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.open .humberger-bar:nth-child(3) {
+      transform: rotate(-50deg) translate(6px, -5px);
+    }
+    .nav-links a {
+      color: rgb(8, 8, 8);
+    }
+    .athlete2{
+      width: 50%;
+      margin-top: 1em;
+    }
+    .amali-logo img{
+    margin-right: -160%;
+    margin-bottom: 2%;
+  
+    }
+  
+    .sponsor-button {
+        background-color: red;
+        border: none;
+        font-size: 4em;
+        color: white;
+        padding: 10px 26px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .sponsor-button:hover {
+        background-color: green;
+        border: none;
+        color: white;
+        padding: 12px 35px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .nav-list{
+        display: grid;
+        grid-template-columns: repeat(1, 4fr);
+        text-align: left;
+        gap: 5em;
+        font-size: 0.7em;
+        /* margin-bottom:40% ; */
+      }
+      .nav-list a:hover{
+        background-color: green;      
+      }      
+    .nav-links.active {
+      display: flex;
+      transform: translateX(0);
+    }
+    .nav-links a {
+      font-size: 1.5rem;
+      margin: 10px 0;
+    }
+    .hamburger {
+      display: flex;
+      /* margin-right: 230px; */
+      margin-bottom: 1em;  
+    
+     }
+    .menu-open .hamburger {
+      margin-right: 0;
+    }
+    .menu-open .nav-links {
+      display: flex;
+    }
+  }
+  @media (max-width: 280px){
+    .nav-links {
+      font-size: 0.4em;
+      position: absolute;
+      right: 0;
+      background-color: #F9FCF9;
+      width: 100%;
+      top: 38px;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      z-index: 9999;
+      height: 65%;
+      /* position: fixed; */
+      overflow-y: auto;
+    }
+    .athlete2{
+      width: 35%;
+    }
+    .hamburger {
+      display: flex;
+      margin-left: 250px;
+      margin-top: 1em;
+    }
+    
+  }
+  @media (max-width: 414px) {
+    .nav-links {
+      font-size: 0.4em;
+      position: absolute;
+      right: 0;
+      background-color: #F9FCF9;
+      width: 150%;
+      top: 71px;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      z-index: 9999;
+      /* height: 100%; */
+      overflow-y: auto;
+      margin-top: -12px;
+    }
+    .hamburger.open .humberger-bar:nth-child(1) {
+      transform: rotate(50deg) translate(5px, 3px);
+    }
+    .hamburger.open .humberger-bar:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.open .humberger-bar:nth-child(3) {
+      transform: rotate(-50deg) translate(6px, -5px);
+    }
+    .nav-links a {
+      color: rgb(8, 8, 8);
+    }
+    .athlete2 img{
+      width: 50%;
+    }
+  
+    .amali-logo img{
+    margin-left: -140%;
+    margin-top: 9%;
+  
+    }
+    .sponsor-button {
+        background-color: red;
+        border: none;
+        font-size: 4em;
+        color: white;
+        padding: 10px 26px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .sponsor-button:hover {
+        background-color: green;
+        border: none;
+        color: white;
+        padding: 12px 35px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .nav-list{
+        display: grid;
+        grid-template-columns: repeat(1, 4fr);
+        text-align: left;
+        gap: 4em;
+        font-size: 0.7em;
+      
+      }
+      .nav-list a:hover{
+        background-color: green;      
+      }      
+      .athlete2{
+        width: 20%;
+      }
+    .nav-links.active {
+      display: flex;
+      transform: translateX(0);
+    }
+    .nav-links a {
+      font-size: 1.5rem;
+      margin: 10px 0;
+    }
+    .hamburger {
+      display: flex;
+      margin-left: 350px;
+      margin-top: -2em;    }
+    .menu-open .hamburger {
+      margin-right: 0;
+      margin-bottom: 2em;
+    }
+    .menu-open .nav-links {
+      display: flex;
+    }
+  }
+  
+  @media (max-width: 393px) {
+    .nav-links {
+      font-size: 0.4em;
+      position: absolute;
+      right: 0;
+      background-color: #F9FCF9;
+      width: 150%;
+      top: 67px;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      z-index: 9999;
+      height: 135%;
+      overflow-y: auto;
+    }
+    .hamburger.open .humberger-bar:nth-child(1) {
+      transform: rotate(50deg) translate(5px, 3px);
+    }
+    .hamburger.open .humberger-bar:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.open .humberger-bar:nth-child(3) {
+      transform: rotate(-50deg) translate(6px, -5px);
+    }
+    .nav-links a {
+      color: rgb(8, 8, 8);
+    }
+    .athlete2{
+      width: 50%;
+    }
+    .amali-logo img{
+    margin-left: -75%;
+    margin-top: 3%;
+  
+    }
+    .sponsor-button {
+        background-color: red;
+        border: none;
+        font-size: 4em;
+        color: white;
+        padding: 10px 26px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .sponsor-button:hover {
+        background-color: green;
+        border: none;
+        color: white;
+        padding: 12px 35px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .nav-list{
+        display: grid;
+        grid-template-columns: repeat(1, 4fr);
+        text-align: left;
+        gap: 4em;
+        font-size: 0.7em;
+      }
+      .nav-list a:hover{
+        background-color: green;      
+      }      
+      .athlete2{
+        width: 20%;
+      }
+    .nav-links.active {
+      display: flex;
+      transform: translateX(0);
+    }
+    .nav-links a {
+      font-size: 1.5rem;
+      margin: 10px 0;
+    }
+    .hamburger {
+      display: flex;
+      margin-left: 350px;
+      margin-top: 0.48em;    }
+    .menu-open .hamburger {
+      margin-right: 0;
+    }
+    .menu-open .nav-links {
+      display: flex;
+    }
+  }
+  @media (max-width: 375px) {
+    .nav-links {
+      font-size: 0.4em;
+      position: absolute;
+      right: 0;
+      background-color: #F9FCF9;
+      width: 150%;
+      /* top: 9px; */
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      z-index: 9999;
+      height: 135%;
+      overflow-y: auto;
+      margin-top: -12px;
+    }
+    .hamburger.open .humberger-bar:nth-child(1) {
+      transform: rotate(50deg) translate(5px, 3px);
+    }
+    .hamburger.open .humberger-bar:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.open .humberger-bar:nth-child(3) {
+      transform: rotate(-50deg) translate(6px, -5px);
+    }
+    .nav-links a {
+      color: rgb(8, 8, 8);
+    }
+    .athlete2{
+      width: 50%;
+      margin-bottom: -10px;
+      /* margin-left: 20%; */
+    }
+    .amali-logo {
+    margin-left:-19%;
+    /* margin-top: -%; */
+  
+    }
+    .sponsor-button {
+        background-color: red;
+        border: none;
+        font-size: 4em;
+        color: white;
+        padding: 10px 26px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .sponsor-button:hover {
+        background-color: green;
+        border: none;
+        color: white;
+        padding: 12px 35px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .nav-list{
+        display: grid;
+        grid-template-columns: repeat(1, 4fr);
+        text-align: left;
+        gap: 4em;
+        font-size: 0.7em;
+      }
+      .nav-list a:hover{
+        background-color: green;      
+      }      
+      .athlete2{
+        width: 20%;
+      }
+    .nav-links.active {
+      display: flex;
+      transform: translateX(0);
+    }
+    .nav-links a {
+      font-size: 1.5rem;
+      margin: 10px 0;
+    }
+    .hamburger {
+      display: flex;
+      margin-left: 300px;
+      margin-top: -2em;    }
+    .menu-open .hamburger {
+      margin-right: 0;
+      margin-bottom: 1em;
+    }
+    .menu-open .nav-links {
+      display: flex;
+    }
+  }
+  @media (max-width: 390px) {
+    .nav-links {
+      font-size: 0.4em;
+      position: absolute;
+      right: 0;
+      background-color: #F9FCF9;
+      width: 150%;
+      top: 67px;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      z-index: 9999;
+      height: 135%;
+      overflow-y: auto;
+      margin-top: -15px;
+    }
+    .hamburger.open .humberger-bar:nth-child(1) {
+      transform: rotate(50deg) translate(5px, 3px);
+    }
+    .hamburger.open .humberger-bar:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.open .humberger-bar:nth-child(3) {
+      transform: rotate(-50deg) translate(6px, -5px);
+    }
+    .nav-links a {
+      color: rgb(8, 8, 8);
+    }
+    .athlete2{
+      width: 50%;
+    }
+    .amali-logo img{
+    margin-left: -75%;
+    margin-top: 3%;
+  
+    }
+    .sponsor-button {
+        background-color: red;
+        border: none;
+        font-size: 4em;
+        color: white;
+        padding: 10px 26px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .nav-list{
+        display: grid;
+        grid-template-columns: repeat(1, 4fr);
+        text-align: left;
+        gap: 4em;
+        font-size: 0.7em;
+      }
+      .nav-list a:hover{
+        background-color: green;      
+      }      
+      .athlete2{
+        width: 20%;
+      }
+    .nav-links.active {
+      display: flex;
+      transform: translateX(0);
+    }
+    .nav-links a {
+      font-size: 1.5rem;
+      margin: 10px 0;
+    }
+    .hamburger {
+      display: flex;
+      margin-left: 300px;
+      margin-top: -2em;    }
+    .menu-open .hamburger {
+      margin-right: 0;
+      margin-bottom: 3em;
+    }
+    .menu-open .nav-links {
+      display: flex;
+    }
+  }
+  @media (max-width: 393px) {
+    .nav-links {
+      font-size: 0.4em;
+      position: absolute;
+      right: 0;
+      background-color: #F9FCF9;
+      width: 150%;
+      top: 67px;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      z-index: 9999;
+      height: 135%;
+      overflow-y: auto;
+      margin-top: -15px;
+    }
+    .hamburger.open .humberger-bar:nth-child(1) {
+      transform: rotate(50deg) translate(5px, 3px);
+    }
+    .hamburger.open .humberger-bar:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.open .humberger-bar:nth-child(3) {
+      transform: rotate(-50deg) translate(6px, -5px);
+    }
+    .nav-links a {
+      color: rgb(8, 8, 8);
+    }
+    .athlete2{
+      width: 50%;
+    }
+    .amali-logo img{
+    margin-left: -140%;
+    margin-top: 3%;
+  
+    }
+    .sponsor-button {
+        background-color: red;
+        border: none;
+        font-size: 4em;
+        color: white;
+        padding: 10px 26px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .nav-list{
+        display: grid;
+        grid-template-columns: repeat(1, 4fr);
+        text-align: left;
+        gap: 4em;
+        font-size: 0.7em;
+      }
+      .nav-list a:hover{
+        background-color: green;      
+      }      
+      .athlete2{
+        width: 20%;
+      }
+    .nav-links.active {
+      display: flex;
+      transform: translateX(0);
+    }
+    .nav-links a {
+      font-size: 1.5rem;
+      margin: 10px 0;
+    }
+    .hamburger {
+      display: flex;
+      margin-left: 320px;
+      margin-top: -1.8em;    }
+    .menu-open .hamburger {
+      margin-right: 0;
+      margin-bottom: 3em;
+    }
+    .menu-open .nav-links {
+      display: flex;
+    }
+  }
+  @media (max-width:280px) {
+    .nav-links {
+      font-size: 0.4em;
+      position: absolute;
+      right: 0;
+      background-color: #F9FCF9;
+      width: 150%;
+      top: 67px;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      z-index: 9999;
+      height: 135%;
+      overflow-y: auto;
+      margin-top: -22px;
+    }
+    
+    .hamburger.open .humberger-bar:nth-child(1) {
+      transform: rotate(50deg) translate(5px, 3px);
+    }
+    .hamburger.open .humberger-bar:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.open .humberger-bar:nth-child(3) {
+      transform: rotate(-50deg) translate(6px, -5px);
+    }
+    .nav-links a {
+      color: rgb(8, 8, 8);
+    }
+    .athlete2{
+      width: 50%;
+    }
+    .amali-logo img{
+    margin-left: -75%;
+    margin-top: 3%;
+  
+    }
+    .sponsor-button {
+        background-color: red;
+        border: none;
+        font-size: 4em;
+        color: white;
+        padding: 10px 26px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .nav-list{
+        display: grid;
+        grid-template-columns: repeat(1, 4fr);
+        text-align: left;
+        gap: 4em;
+        font-size: 0.7em;
+      }
+      .nav-list a:hover{
+        background-color: green;      
+      }      
+      .athlete2{
+        width: 20%;
+      }
+    .nav-links.active {
+      display: flex;
+      transform: translateX(0);
+    }
+    .nav-links a {
+      font-size: 1.5rem;
+      margin: 10px 0;
+    }
+    .hamburger {
+      display: flex;
+      margin-left: 240px;
+      margin-top: -2em;    }
+    .menu-open .hamburger {
+      margin-right: 0;
+      margin-bottom: 3em;
+    }
+    .menu-open .nav-links {
+      display: flex;
+    }
+  }
